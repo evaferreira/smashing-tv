@@ -1,0 +1,9 @@
+
+video {
+    width: 640px;
+    height: 480px;
+    border: 2px solid pink;
+
+    display: block;
+    margin: 20px auto;
+}

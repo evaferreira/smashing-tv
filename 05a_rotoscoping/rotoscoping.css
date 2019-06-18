@@ -1,0 +1,45 @@
+
+.wrapper > div {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    max-width: 1300px;
+    margin: 20px auto;
+}
+
+video {
+    width: 480px;
+    height: 606px;
+    border: 2px solid pink;
+}
+
+.canvas-wrapper{
+    position: relative;
+    overflow: hidden;
+
+    border: 2px solid rebeccapurple;
+    background-image: url(images/kittens.jpg);
+}
+
+.canvas {
+    position: absolute;
+    transform-origin: bottom;
+}
+
+/* To center canvas instead of video */
+.canvas1{
+    left: 50%;
+    margin-left: -240px;
+    z-index: 1;
+}
+.canvas2{
+    left: -100px;
+    transform: scale(0.95);
+}
+.canvas3{
+    right: -100px;
+    transform: scale(0.95);
+}
+
+.picker {
+    text-align: center;
+}

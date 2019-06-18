@@ -1,0 +1,23 @@
+/* video5.css */
+
+.wrapper{
+	max-width: 1000px;
+	margin: 50px auto;
+	position: relative;
+}
+
+.video1, .video2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.video2{
+	mix-blend-mode: luminosity;
+}
+.video2:hover{
+	/* mix-blend-mode: hard-light; */
+	mix-blend-mode: difference;
+	/* mix-blend-mode: color-dodge; */
+}
