@@ -1,0 +1,37 @@
+/* video23.css */
+
+.wrapper{
+	max-width: 1000px;
+	margin: 50px auto;
+	position: relative;
+}
+
+.video1, .video2, .video3{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.video2{
+	animation: spotlight 2s ease-in forwards;
+}
+
+
+.video1{
+	clip-path: polygon(0 0, 100% 100%, 100% 0, 0 100%);
+}
+.video3{
+	clip-path: polygon(0 0, 100% 100%, 0 100%, 100% 0);
+}
+
+@keyframes spotlight {
+	0% {
+		clip-path: circle(0px);
+	}
+	100% {
+		clip-path: circle(200px);
+	}
+}
+
+
